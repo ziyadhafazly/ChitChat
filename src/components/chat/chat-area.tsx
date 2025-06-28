@@ -21,7 +21,7 @@ export default function ChatArea({
     return (
       <div className="flex h-full flex-col items-center justify-center text-center bg-muted/40">
         <Logo className="w-20 h-20 text-muted-foreground/50 mb-4" />
-        <h2 className="text-2xl font-semibold text-foreground">Welcome to ZN Chat</h2>
+        <h2 className="text-2xl font-semibold text-foreground">Welcome to Chit Chat</h2>
         <p className="text-muted-foreground mt-2">
           Select a conversation to start messaging.
         </p>

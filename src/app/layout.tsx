@@ -3,7 +3,7 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'ZN Chat',
+  title: 'Chit Chat',
   description: 'A professional, real-time messaging chat app.',
 };
 
