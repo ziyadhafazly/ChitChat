@@ -21,7 +21,7 @@ export default function ContactList({
     <div className="flex flex-col h-full bg-card">
       <div className="p-4 border-b border-border flex items-center gap-3">
         <Logo className="w-8 h-8 text-primary" />
-        <h1 className="text-2xl font-bold tracking-tight text-foreground">ChitChatWL</h1>
+        <h1 className="text-2xl font-bold tracking-tight text-foreground">ZN Chat</h1>
       </div>
       <ScrollArea className="flex-1">
         <nav className="p-2 space-y-1">
