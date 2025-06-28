@@ -8,7 +8,7 @@ import { Sparkles } from "lucide-react";
 import { Skeleton } from "../ui/skeleton";
 
 interface SmartReplyProps {
-  conversation: Conversation;
+  conversation: Conversation | null;
   onSuggestionClick: (suggestion: string) => void;
 }
 
@@ -21,6 +21,7 @@ export default function SmartReply({
 
   useEffect(() => {
     if (
+      conversation &&
       conversation.messages.length > 0 &&
       conversation.messages[conversation.messages.length - 1].sender === "them"
     ) {

@@ -9,7 +9,7 @@ import SmartReply from "./smart-reply";
 import { type Conversation } from "@/lib/data";
 
 interface MessageInputProps {
-  conversation: Conversation;
+  conversation: Conversation | null;
   onSendMessage: (text: string) => void;
 }
 
@@ -34,7 +34,8 @@ export default function MessageInput({
   };
 
   const handleSuggestionClick = (suggestion: string) => {
-    setMessage(suggestion);
+    onSendMessage(suggestion);
+    setMessage("");
   }
 
   return (
